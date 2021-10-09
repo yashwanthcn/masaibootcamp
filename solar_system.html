@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Solar System</title>
+	<style>
+		body{
+			width: 100%;
+			height: 100vh;
+			position: absolute;
+
+		}
+
+		img {
+			width: 100%;
+			height: 100vh;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+
+		.planet {
+			border-radius: 50%;
+			position: absolute;
+		}
+
+		.sun {
+			width: 100px;
+			height: 100px;
+			background: orange;
+			border: 5px dotted yellow;
+			left: calc(50% - 100px/2);
+			top: calc(50% - 100px/2);
+		}
+
+		.mercury {
+			width: 20px;
+			height: 20px;
+			background: grey;
+			left: calc(50% - 20px/2);
+			top: calc(50% - 20px/2);
+			animation: mercury 2s linear infinite;
+		}
+
+		.venus {
+			width: 30px;
+			height: 30px;
+			background: red;
+			left: calc(50% - 30px/2);
+			top: calc(50% - 30px/2);
+			animation: venus 3.5s linear infinite;
+		}
+
+		.mars {
+			width: 40px;
+			height: 40px;
+			background: red;
+			left: calc(50% - 40px/2);
+			top: calc(50% - 40px/2);
+			animation: mars 4.5s linear infinite;
+		}
+
+		@keyframes mercury {
+			from {
+				transform: rotate(0deg) translateX(80px);
+			}
+			to {
+				transform: rotate(360deg) translateX(80px);
+			}
+		}
+
+		@keyframes venus {
+			from {
+				transform: rotate(0deg) translateX(120px);
+			}
+			to {
+				transform: rotate(360deg) translateX(120px);
+			}
+		}
+
+
+		@keyframes mars {
+			from {
+				transform: rotate(0deg) translateX(250px);
+			}
+			to {
+				transform: rotate(360deg) translateX(250px);
+			}
+		}
+
+		.earth {
+			width: 60px;
+			height: 60px;
+			background: green;
+			left: calc(50% - 60px/2);
+			top: calc(50% - 60px/2);
+			animation: earth 4s linear infinite;
+		}
+
+		@keyframes earth {
+			from {
+				transform: rotate(0deg) translateX(180px);
+			}
+			to {
+				transform: rotate(360deg) translateX(180px);
+			}
+		}
+
+		.jupiter {
+			width: 70px;
+			height: 70px;
+			background: #ebe534;
+			left: calc(50% - 70px/2);
+			top: calc(50% - 70px/2);
+			animation: jupiter 7s linear infinite;
+		}
+
+		@keyframes jupiter {
+			from {
+				transform: rotate(0deg) translateX(320px);
+			}
+			to {
+				transform: rotate(360deg) translateX(320px);
+			}
+		}
+
+		.saturn {
+			width: 40px;
+			height: 40px;
+			background: #eb9334;
+			border: 3px solid white;
+			left: calc(50% - 40px/2);
+			top: calc(50% - 40px/2);
+			animation: saturn 8s linear infinite;
+		}
+
+		@keyframes saturn {
+			from {
+				transform: rotate(0deg) translateX(380px);
+			}
+			to {
+				transform: rotate(360deg) translateX(380px);
+			}
+		}
+
+		.uranus {
+			width: 55px;
+			height: 55px;
+			background: #34cdeb;
+			left: calc(50% - 55px/2);
+			top: calc(50% - 55px/2);
+			animation: uranus 9s linear infinite;
+		}
+
+		@keyframes uranus {
+			from {
+				transform: rotate(0deg) translateX(430px);
+			}
+			to {
+				transform: rotate(360deg) translateX(430px);
+			}
+		}
+
+		.neptune {
+			width: 40px;
+			height: 40px;
+			background: #3474eb;
+			border: 3px solid white;
+			left: calc(50% - 40px/2);
+			top: calc(50% - 40px/2);
+			animation: neptune 10s linear infinite;
+		}
+
+		@keyframes neptune {
+			from {
+				transform: rotate(0deg) translateX(480px);
+			}
+			to {
+				transform: rotate(360deg) translateX(480px);
+			}
+		}
+	</style>
+</head>
+<body>
+	<img src="bg.jpg"></img>
+	<div class="planet sun"></div>
+	<div class="planet mercury"></div>
+	<div class="planet venus"></div>
+	<div class="planet earth"></div>
+	<div class="planet mars"></div>
+	<div class="planet jupiter"></div>
+	<div class="planet saturn"></div>
+	<div class="planet uranus"></div>
+	<div class="planet neptune"></div>
+</body>
+</html>
